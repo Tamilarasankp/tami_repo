@@ -1,0 +1,69 @@
+---
+title: "Ioslides Presentation"
+author: "Tami"
+date: "6/10/2019"
+output: ioslides_presentation
+---
+
+```{css, echo = FALSE}
+pre {
+  max-height: 300px;
+  float: left;
+  width: 910px;
+  overflow-y: auto;
+}
+
+pre.r{
+  max-height: none;
+
+}
+```
+
+# Introduction
+
+## Change the working directory
+
+```{r}
+getwd()
+#  "C:/Users/Tami/Documents/R/win-library/3.6/usethis/templates"
+setwd("C:/Users/Tami/Desktop/R_codes_tami/visby")
+getwd()
+
+```
+## Reproducible research
+
+- Rstudio
+- Rmarkdown
+
+## Ioslides Presentation
+
+```{r}
+data(iris)
+str(cars)
+```
+
+## Head cars
+
+```{r}
+head(cars)
+```
+
+
+## Plot Cars
+
+
+```{r,fig.height=3,fig.width=5,fig.cap="scatterplot."}
+plot(cars$speed,cars$dist)
+```
+## Version Info
+
+
+```{r,}
+sessionInfo()
+```
+
+
+## End
+
+
+
